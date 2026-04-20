@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image{
+            display:none;
+            width:300px ;
+         }
+         #text{display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>the island</h1>
+    <p>we went exploring into the forest in the island untill our friend was lost</p>
+    <button onclick="showimage()">dont press this</button>
+    <br>
+    <br>
+    <img src="get.jump.scared.jpg" id="image">
+    <button onclick="showtext()">tell me more</button>
+    <p id="text">After we lost our friend we went to find him.We heard some scary giggling and we tought this island was haunted.We explored more and we found that he was tied to a chair by a ghost.PRESS the first button after reading this</p>
+    <script>
+        function showimage(){
+            var img = document.getElementById("image");
+            img.style.display="block";
+        }
+        function showtext(){
+            var text =  document.getElementById("text");
+            text.style.display="block"
+        }
+
+    </script>
+           
+</body>
+</html>
