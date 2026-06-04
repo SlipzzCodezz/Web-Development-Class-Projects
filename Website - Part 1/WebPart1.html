@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+
+            <a href="style.css"> </a>
+
+            <a href="#Home">Home</a>
+
+            <a href="#About">About</a>
+
+            <a href="#Service">Service</a>
+
+            <a href="#Contact">Contact</a>
+
+
+        </nav>
+
+
+
+
+
+
+    </div>
+    <div>
+        <h1>7 Wonders of the World</h1>
+        <img class="mySlides" src="Taj_Mahal.PNG">
+        <img class="mySlides" src="christ.jpeg">
+        <img class="mySlides" src="Chichén Itzá.jpeg">
+        <img class="mySlides" src="China_Wall.PNG">
+        <img class="mySlides" src="Coloseenum.PNG">
+        <img class="mySlides" src="Petra.jpeg">
+        <img class="mySlides" src="Machu_Pichu.PNG">
+    
+    
+    </div>
+    
+    </div>
+    
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/* Class Selector */
+
+.navbar {
+
+    background-color: #333;
+
+    overflow: hidden;
+
+
+
+}
+
+/* Group Selector*/
+
+.navbar a {
+
+    float: left;
+
+    display: block;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+}
+
+/* Pesudo Selector */
+
+.navbar a:hover {
+
+    background-color: #eaf3a4;
+
+    color: black;
+
+}
